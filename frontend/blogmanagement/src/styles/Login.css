@@ -1,0 +1,35 @@
+.login-form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+.login-div{
+    height: 100vh;
+    background-color: rgb(47, 35, 35);
+}
+
+.login-form div{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+.login-form div input{
+    outline: none;
+    padding: 2px;
+    text-indent: 3px;
+}
+
+.login-div button{
+    width: 40%;
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: grey;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}

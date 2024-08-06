@@ -1,0 +1,88 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 20px;
+}
+.home-navbar {
+  display: flex;
+  gap: 100px;
+}
+
+
+.home-navbar .user_profile {
+  margin-left: 500px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.home-navbar .user_profile .userImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.home-container .welcome {
+  /* border: 2px solid red; */
+  width: 55vw;
+  font-size: 30px;
+}
+
+.home-container .ground-photo{
+    width: 97vw;
+    height: 20vh;
+}
+
+.home-container .ground-photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.home-container .post-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.home-container .post-container h2{
+    margin: 0 0;
+}
+
+.home-container .post-container .all-posts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;    
+    align-items: center ;
+}
+
+.post{
+    width: 20%;
+}
+
+.post img{
+    width: 100%;
+}
+
+
+.post p{
+    font-size: 14px;
+}
+
+.pagination{
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.pagination button{
+    padding: 7px;
+    background-color: rgb(250, 48, 48);
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
