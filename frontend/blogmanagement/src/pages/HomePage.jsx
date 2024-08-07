@@ -4,12 +4,13 @@ import jsImg from '../assets/photos/javascript.jpeg';
 import '../styles/Homepage.css';
 import Post from '../components/Post';
 import paginate from '../utils/paginate';
+import Navbar from '../components/Navbar';
 
 const HomePage = () => {
-    const lonText = "Upon arrival, your senses will be rewarded with the pleasant scent of lemongrass oil uses to clean the natural wood found throughout the room, creating a relaxing atmosphere withing  the space. A wonderful serently has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with the whole heart.I am alone , and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite"
+  const lonText = "Upon arrival, your senses will be rewarded with the pleasant scent of lemongrass oil uses to clean the natural wood found throughout the room, creating a relaxing atmosphere withing  the space. A wonderful serently has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with the whole heart.I am alone , and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite"
 
   const posts = [
-    { title: 'Opening day of boating season, Seattle WA', content: lonText},
+    { title: 'Opening day of boating season, Seattle WA', content: lonText },
     { title: 'Opening day of boating season, Seattle WA', content: lonText },
     { title: 'Opening day of boating season, Seattle WA', content: lonText },
     { title: 'Opening day of boating season, Seattle WA', content: lonText },
@@ -40,16 +41,7 @@ const HomePage = () => {
 
   return (
     <div className='home-container'>
-      <nav className='home-navbar'>
-        <h1>U'r_Blog</h1>
-        <h3>All_posts</h3>
-        <h3>new_post</h3>
-
-        <div className='user_profile'>
-          <img src={userImg} className='userImg' alt='not_found' />
-          <p>ck_debrice</p>
-        </div>
-      </nav>
+      <Navbar />
 
       <div className='welcome'>
         Welcome to U'r_Blog site where your posts are revealed in the real world by people from different corners of the world.
@@ -62,7 +54,7 @@ const HomePage = () => {
         <h2>All Posts</h2>
         <div className='all-posts'>
           {currentPosts.map((post, index) => (
-            <Post key={index} title={post.title} content={post.content} />
+            <Post key={index} title={post.title} content={post.content} maxLength={80} displayTitle={true} />
           ))}
         </div>
         <div className='pagination'>
